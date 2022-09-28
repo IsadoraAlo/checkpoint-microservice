@@ -43,7 +43,7 @@ public class ProdutoServiceImpl implements ProdutoService {
         HashMap<String, String> map = new HashMap<>();
         map.put("emailTo", "giovannikenjimendes1@gmail.com");
         map.put("subject", "CADASTRO DE PRODUTO");
-        map.put("text", "O produto: " + produto.getNome() + " foi cadastrado com sucesso");
+        map.put("text", "O produto " + produto.getNome() + " no valor de R$" + produto.getValor() + " foi cadastrado com sucesso");
 
         //
         //    "emailTo": "giovannikenjimendes1@gmail.com",
