@@ -1,4 +1,6 @@
 mainPage();
+
+
 function fazGet(url){
     let request = new XMLHttpRequest();
     request.open("GET", url, false)
@@ -29,7 +31,6 @@ function criaLinha(produto){
 }
 
 function mainPage(){
-    console.log('cheguei aqui');
     let data = fazGet("http://localhost:8060/api/v1/produtos"); 
     let produtos = JSON.parse(data); 
 
@@ -38,6 +39,5 @@ function mainPage(){
         let linha = criaLinha(element);
         tabela.appendChild(linha);
     });
-    //para cada user criar uma linha e add na tabela
 
 }
